@@ -57,7 +57,7 @@ contract Token {
         require(_to != address(0));
         balanceOf[_from] = balanceOf[_from] - (_value);
         balanceOf[_to] = balanceOf[_to] + (_value);
-        emit transfer(_from0, _to, _value);
+        emit transfer(_from, _to, _value);
     }
 
     function transferFrom(
